@@ -1,17 +1,13 @@
-# Apostrophe Boilerplate v2.x
+# Anchor Demo
 
-Apostrophe Boilerplate is a minimal starting point for [Apostrophe 2](https://github.com/punkave/apostrophe) projects.
+This repo demonstrates one way to combine `apostrophe-anchors`, `apostrophe-id-field-type`, and a project level widget to create a navigation builder that can link to internal Apostorphe pages, external URLs, and target anchor points from either destination within the Apostrophe interface.
 
-To get started, we recommend taking a look at [our guide to creating your first project](http://apostrophecms.org/docs/tutorials/getting-started/creating-your-first-project.html). You could also take a look at [Apostrophe's CLI](https://github.com/punkave/apostrophe) or simply fork this repository.
+## `apostrophe-anchors`
+Used to `improve` all existing widgets and give them an ID property that is wrapped around the widget, allowing easing anchor linking to any existing widget.
+[https://github.com/apostrophecms/apostrophe-anchors](https://github.com/apostrophecms/apostrophe-anchors)
 
-Once you have a local copy of this project to work from, make sure to install its dependencies with `npm install`. With Apostrophe installed, the first thing to do create an admin user account so you're able to log into the CMS. Run the following command (this will prompt you for a password).
+## `apostrophe-id-field-type`
+An Apostrophe field type that can be attached to other schema fields and dynamically provide the `name` and `id` attributes existing on outside pages. Useful for targeting anchor points on pages both internal to Apostrophe and external.
+[https://github.com/apostrophecms/apostrophe-id-field-type](https://github.com/apostrophecms/apostrophe-id-field-type)
 
-```bash
-node app.js apostrophe-users:add admin admin
-```
 
-Now you're all set! Just run `node app.js` to start up the local server and head to `localhost:3000` in your web browser.
-
----------------
-
-For more documentation on Apostrophe, visit the [A2 documentation site](http://apostrophecms.com).
