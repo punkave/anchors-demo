@@ -1,0 +1,32 @@
+<ul class="menu-items">
+  {% for item in data.widget.items %}
+    {% if item.anchor %}
+      {% set end = '#' + item.anchor %}
+    {% else %}
+        {% set end = '' %}
+    {% endif %}
+    {% if item.linkType === 'external' %}
+      {% set href = item.url %}
+    {% else %}
+      {% set href = item._page._url %}
+    {% endif %}
+    <li>
+      <a href="{{ href }}{{ end }}">{{ item.label }}</a>
+    </li>
+  {% endfor %}
+</ul> 
+
+<style>
+  .menu-items {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .menu-items li {
+    margin: 0 1rem;
+  }
+
+  .menu-items a {
+    color: white;
+    text-decoration: none;
+  }
+</style>
