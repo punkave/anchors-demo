@@ -6,7 +6,15 @@ var apos = require('apostrophe')({
   modules: {
     'apostrophe-templates': { viewsFolderFallback: path.join(__dirname, 'views') },
     'apostrophe-anchors': {},
-    'apostrophe-id-field-type': {},
+    'apostrophe-images-widgets': {
+      addFields: [{
+        type: 'string',
+        name: 'title',
+        label: 'Title'
+      }],
+      anchorDefault: 'title'
+    },
+    'apostrophe-anchor-field-type': {},
     'menu-widgets': {
       anchors: false
     }

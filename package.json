@@ -14,8 +14,8 @@
   "license": "MIT",
   "dependencies": {
     "apostrophe": "^2.47.0",
-    "apostrophe-id-field-type": "git+https://github.com/apostrophecms/apostrophe-id-field-type.git",
-    "apostrophe-anchors": "git+https://github.com/apostrophecms/apostrophe-anchors.git"
+    "apostrophe-anchor-field-type": "^1.0.0",
+    "apostrophe-anchors": "^1.0.0"
   },
   "nodemonConfig": {
     "verbose": true,
